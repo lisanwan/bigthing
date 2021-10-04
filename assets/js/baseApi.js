@@ -15,9 +15,9 @@ $.ajaxPrefilter(function(options) {
         //res.responseJSON可以拿到服务器响应回来的数据
         console.log(res.responseJSON);
         if (res.responseJSON.status == 1 && res.responseJSON.message == '身份认证失败！') {
-            // 清空本地存储的token
+            // 强制清空本地存储的token
             localStorage.removeItem('token')
-                // 跳转回登录页面
+                // 强制跳转回登录页面
             location.href = '/login.html'
         }
     }
