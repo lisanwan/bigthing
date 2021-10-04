@@ -62,6 +62,7 @@ $(function() {
                     // 跳转到后台主页
                     // console.log(res.token);
                 location.href = '/index.html'
+
             }
         })
     })
