@@ -20,7 +20,7 @@
 
 /* 让ifarme填满整个内容区域 */
 
-#iframe {
+iframe {
     width: 100%;
     height: 100%;
 }

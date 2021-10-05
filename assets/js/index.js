@@ -18,15 +18,15 @@ $(function() {
     // 获取用户信息
 function getUserInfo() {
     $.ajax({
-        url: 'my/userinfo',
+        url: '/my/userinfo',
         method: 'GET',
         // headers: {
         //     Authorization: localStorage.getItem('token') || ''
         // },
         success: function(res) {
             if (res.status != 0) { return layer.msg('获取用户信息失败') }
-            layer.msg('获取用户信息成功')
-                // 调用renderAvatar()渲染用户头像及名称
+            // layer.msg('获取用户信息成功')
+            // 调用renderAvatar()渲染用户头像及名称
             renderAvatar(res.data)
         },
     })
