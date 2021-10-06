@@ -1,5 +1,5 @@
 $(function() {
-    //66
+    //6666
     var layer = layui.layer
         // 1.1 获取裁剪区域的 DOM 元素
     var $image = $('#image')
