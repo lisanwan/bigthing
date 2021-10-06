@@ -33,21 +33,22 @@ function getUserInfo() {
 }
 
 function renderAvatar(user) {
+    console.log(user);
     // 获取用户名称
     var name = user.nickname || user.username;
     console.log(name);
     // 设置欢迎文本
     $('#welcome').html('欢迎&nbsp;&nbsp' + name);
-    // 渲染用户头像
+    // 渲染用户头像\
     if (user.user_pic != null)
     // 渲染图片头像
     {
-        $('.userinfo img').css('src', user.user_pic).show()
+        $('.userinfo img').attr('src', user.user_pic).show()
         $('.text-avatar').hide()
     }
     // 渲染文本头像
     else {
-        $('.userinfo img').css('src', user.user_pic).hide()
+        $('.userinfo img').hide()
         var first = name[0].toUpperCase();
         $('.text-avatar').html(first)
         $('.text-avatar').show()

@@ -43,8 +43,10 @@
 
             <!-- 第二行的按钮区域 -->
             <div class="row2">
-                <button type="button" class="layui-btn">上传</button>
-                <button type="button" class="layui-btn layui-btn-danger">确定</button>
+                <!-- 通过accept属性指定文件可以选择的格式 -->
+                <input type="file" id="file" accept="image/png,image/jpeg">
+                <button type="button" class="layui-btn" id="btnUploadImage">上传</button>
+                <button type="button" class="layui-btn layui-btn-danger" id="btnUpload">确定</button>
             </div>
         </div>
     </div>
@@ -53,6 +55,10 @@
     <script src="/assets/lib/jquery.js"></script>
     <script src="/assets/lib/cropper/Cropper.js"></script>
     <script src="/assets/lib/cropper/jquery-cropper.js"></script>
+    <!-- 导入公共的api脚本 -->
+    <script src="/assets/js/baseApi.js"></script>
+    <!-- 导入layui.js脚本 -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 导入自己的js脚本 -->
     <script src="/assets/js/user/user_avatar.js"></script>
 </body>

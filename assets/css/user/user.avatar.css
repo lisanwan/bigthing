@@ -87,3 +87,10 @@ body {
     overflow: hidden;
     border-radius: 50%;
 }
+
+
+/* 隐藏文件上传 */
+
+#file {
+    display: none;
+}
