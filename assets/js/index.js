@@ -1,4 +1,5 @@
 $(function() {
+        //88
         // 调用getUserInfo() 获取用户基本信息 
         getUserInfo()
         $('#tuichu').on('click', function() {
