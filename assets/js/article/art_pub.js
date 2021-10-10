@@ -79,7 +79,7 @@ $(function() {
                 fd.forEach(function(x, y) {
                         console.log(y, x);
                     })
-                    // 发起ajax请求，发布文章
+                    // 发起ajax请求，发布文章功能
                 $.ajax({
                     method: 'POST',
                     url: '/my/article/add',
