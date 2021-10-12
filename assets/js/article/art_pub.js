@@ -14,7 +14,6 @@ $(function() {
                 if (res.status != 0) {
                     return layer.msg('获取文章列表失败')
                 }
-                console.log(res);
                 var htmlStr = template('tpl-cate', res);
                 $('#cate_id').html(htmlStr)
                     // layui表单更新渲染
